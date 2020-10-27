@@ -1,0 +1,34 @@
+type Student {
+  _id: ID!
+  name: String!
+  age: Int!
+  mobile: String!
+  school: String!
+  gender: String!
+  lecture: [Lecture!]!
+}
+type Lecture {
+  _id: ID!
+  name: String!
+  teacher: String!
+  lv: Int!
+  location: String!
+  pay: Int!
+}
+type Author {
+  _id: ID!
+  name: String!
+  birth: String!
+  company: String!
+  artList: [Book!]!
+}
+
+type Book {
+  _id: ID!
+  title: String!
+  summary: String!
+  author: Author!
+  published: String!
+  price: Int!
+  type: String!
+}
